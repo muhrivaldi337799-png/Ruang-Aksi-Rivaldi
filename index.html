@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="RuangAksi adalah website pengelolaan kegiatan dan relawan mahasiswa."
+    >
+
+    <title>RuangAksi | Muhammad Rivaldi</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- SIDEBAR / MENU NAVIGASI -->
+    <aside class="sidebar">
+        <a href="#beranda" class="brand">
+            <span class="logo">R↗</span>
+            <span>RuangAksi.</span>
+        </a>
+
+        <p class="menu-title">WORKSPACE MAHASISWA</p>
+
+        <nav>
+            <a href="#beranda" class="nav-link active">
+                Beranda
+            </a>
+
+            <a href="#kegiatan" class="nav-link">
+                Jelajahi Kegiatan
+            </a>
+
+            <a href="#pendaftaran" class="nav-link">
+                Daftar Relawan
+            </a>
+
+            <a href="#relawan" class="nav-link">
+                Data Relawan
+            </a>
+
+            <a href="#tentang" class="nav-link">
+                Tentang Proyek
+            </a>
+        </nav>
+
+        <div class="sidebar-note">
+            <span class="note-icon">✦</span>
+
+            <h3>
+                Langkah kecil.<br>
+                Dampak berarti.
+            </h3>
+
+            <p>
+                Mulai kontribusimu dari lingkungan terdekat.
+            </p>
+        </div>
+
+        <div class="profile">
+            <div class="avatar">MR</div>
+
+            <div>
+                <strong>Muhammad Rivaldi</strong>
+                <small>Sistem Informasi · Semester 3</small>
+            </div>
+        </div>
+    </aside>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+        <header class="topbar">
+            <p>
+                <span class="text-muted">Workspace /</span>
+                Beranda
+            </p>
+
+            <span class="campus">
+                UIN Datokarama Palu
+            </span>
+        </header>
+
+        <!-- BERANDA -->
+        <section id="beranda">
+            <div class="page-heading">
+                <p class="eyebrow">
+                    BERGERAK BERSAMA, BERDAMPAK NYATA
+                </p>
+
+                <h1>
+                    Kontribusi baik dimulai di sini<span>.</span>
+                </h1>
+
+                <p class="description">
+                    Temukan kegiatan, ambil peran, dan jadi bagian
+                    dari perubahan.
+                </p>
+            </div>
+
+            <div class="hero">
+                <div class="hero-content">
+                    <span class="hero-label">
+                        RUANG UNTUK AKSI NYATA
+                    </span>
+
+                    <h2>
+                        Bukan sekadar hadir.<br>
+                        Jadilah yang <span>berarti.</span>
+                    </h2>
+
+                    <p>
+                        Satu waktu, satu tenaga, dan satu langkahmu
+                        bisa membuat lingkungan sekitar menjadi
+                        lebih baik.
+                    </p>
+
+                    <a href="#kegiatan" class="button button-light">
+                        Temukan kegiatan ↗
+                    </a>
+
+                    <p class="hero-caption">
+                        Bersama, kontribusi jadi lebih bermakna.
+                    </p>
+                </div>
+
+                <div class="hero-art" aria-hidden="true">
+                    <p>MAKE A DIFFERENCE</p>
+
+                    <span class="big-star">✳</span>
+
+                    <div>
+                        YOUR NEXT<br>
+                        <strong>GOOD MOVE ↗</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STATISTIK -->
+            <div class="statistics">
+                <article class="stat-card">
+                    <span class="stat-icon icon-green">⚑</span>
+
+                    <div>
+                        <p>Kegiatan tersedia</p>
+                        <h3>3</h3>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <span class="stat-icon icon-orange">♧</span>
+
+                    <div>
+                        <p>Relawan terdaftar</p>
+                        <h3 id="total-relawan">0</h3>
+                    </div>
+                </article>
+
+                <article class="stat-card">
+                    <span class="stat-icon icon-purple">✓</span>
+
+                    <div>
+                        <p>Relawan hadir</p>
+                        <h3 id="total-hadir">0</h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- DAFTAR KEGIATAN -->
+        <section id="kegiatan">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">PILIH AKSIMU</p>
+                    <h2>Kegiatan untukmu</h2>
+                </div>
+
+                <p class="section-note">
+                    Agenda simulasi untuk proyek perkuliahan
+                </p>
+            </div>
+
+            <div class="activity-list">
+                <article class="activity-card">
+                    <div class="activity-art art-green">
+                        <span>LINGKUNGAN</span>
+
+                        <h3>
+                            Mulai dari<br>
+                            sekitar kita.
+                        </h3>
+
+                        <i aria-hidden="true">♧</i>
+                    </div>
+
+                    <div class="activity-body">
+                        <p class="activity-category">
+                            01 · AKSI LINGKUNGAN
+                        </p>
+
+                        <h3>Kampus Bersih, Bumi Sehat</h3>
+
+                        <p class="activity-description">
+                            Aksi bersih lingkungan dan pemilahan
+                            sampah bersama mahasiswa.
+                        </p>
+
+                        <p class="activity-date">
+                            14 November 2026 · 08.00 WITA
+                        </p>
+
+                        <div class="activity-footer">
+                            <span>Area kampus</span>
+
+                            <button
+                                type="button"
+                                class="join-button"
+                                data-kegiatan="Kampus Bersih, Bumi Sehat"
+                            >
+                                Ikut aksi ↗
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="activity-card">
+                    <div class="activity-art art-cream">
+                        <span>PENDIDIKAN</span>
+
+                        <h3>
+                            Berbagi ilmu.<br>
+                            Tumbuh bersama.
+                        </h3>
+
+                        <i aria-hidden="true">✦</i>
+                    </div>
+
+                    <div class="activity-body">
+                        <p class="activity-category">
+                            02 · AKSI PENDIDIKAN
+                        </p>
+
+                        <h3>Teman Belajar Digital</h3>
+
+                        <p class="activity-description">
+                            Berbagi keterampilan komputer dasar
+                            dan penggunaan internet yang bijak.
+                        </p>
+
+                        <p class="activity-date">
+                            21 November 2026 · 09.00 WITA
+                        </p>
+
+                        <div class="activity-footer">
+                            <span>Ruang komunitas</span>
+
+                            <button
+                                type="button"
+                                class="join-button"
+                                data-kegiatan="Teman Belajar Digital"
+                            >
+                                Ikut aksi ↗
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="activity-card">
+                    <div class="activity-art art-purple">
+                        <span>LITERASI</span>
+
+                        <h3>
+                            Satu buku.<br>
+                            Banyak jendela.
+                        </h3>
+
+                        <i aria-hidden="true">▤</i>
+                    </div>
+
+                    <div class="activity-body">
+                        <p class="activity-category">
+                            03 · AKSI LITERASI
+                        </p>
+
+                        <h3>Pojok Baca Bergerak</h3>
+
+                        <p class="activity-description">
+                            Mengelola sesi membaca dan kegiatan
+                            kreatif untuk anak-anak.
+                        </p>
+
+                        <p class="activity-date">
+                            28 November 2026 · 08.30 WITA
+                        </p>
+
+                        <div class="activity-footer">
+                            <span>Taman baca</span>
+
+                            <button
+                                type="button"
+                                class="join-button"
+                                data-kegiatan="Pojok Baca Bergerak"
+                            >
+                                Ikut aksi ↗
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FORM PENDAFTARAN -->
+        <section id="pendaftaran" class="registration-panel">
+            <div class="registration-intro">
+                <p class="eyebrow">AMBIL BAGIAN</p>
+
+                <h2>
+                    Setiap orang punya peran untuk perubahan.
+                </h2>
+
+                <p>
+                    Pilih kegiatan dan peran yang ingin kamu ambil.
+                    Data pendaftaran akan langsung ditampilkan
+                    pada tabel relawan.
+                </p>
+
+                <div class="information-box">
+                    <strong>Tentang penyimpanan</strong>
+
+                    <p>
+                        Data disimpan pada browser perangkat ini.
+                        Website ini merupakan simulasi, bukan
+                        pendaftaran kegiatan resmi.
+                    </p>
+                </div>
+            </div>
+
+            <form id="form-relawan">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nama">Nama lengkap</label>
+
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Masukkan nama lengkap"
+                            maxlength="70"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nim">NIM</label>
+
+                        <input
+                            type="text"
+                            id="nim"
+                            name="nim"
+                            placeholder="6–20 digit angka"
+                            pattern="[0-9]{6,20}"
+                            title="NIM terdiri dari 6 sampai 20 angka"
+                            maxlength="20"
+                            inputmode="numeric"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prodi">Program studi</label>
+
+                        <input
+                            type="text"
+                            id="prodi"
+                            name="prodi"
+                            placeholder="Contoh: Sistem Informasi"
+                            maxlength="70"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pilihan-kegiatan">Kegiatan</label>
+
+                        <select
+                            id="pilihan-kegiatan"
+                            name="kegiatan"
+                            required
+                        >
+                            <option value="">Pilih kegiatan</option>
+
+                            <option value="Kampus Bersih, Bumi Sehat">
+                                Kampus Bersih, Bumi Sehat
+                            </option>
+
+                            <option value="Teman Belajar Digital">
+                                Teman Belajar Digital
+                            </option>
+
+                            <option value="Pojok Baca Bergerak">
+                                Pojok Baca Bergerak
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="peran">Peran yang diminati</label>
+
+                    <select id="peran" name="peran" required>
+                        <option value="">Pilih peran</option>
+                        <option value="Relawan lapangan">
+                            Relawan lapangan
+                        </option>
+                        <option value="Dokumentasi">Dokumentasi</option>
+                        <option value="Fasilitator">Fasilitator</option>
+                        <option value="Perlengkapan">Perlengkapan</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="motivasi">
+                        Motivasi <span class="text-muted">(opsional)</span>
+                    </label>
+
+                    <textarea
+                        id="motivasi"
+                        name="motivasi"
+                        rows="3"
+                        maxlength="300"
+                        placeholder="Apa yang membuatmu ingin berkontribusi?"
+                    ></textarea>
+                </div>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="persetujuan" required>
+
+                    <span>
+                        Saya bersedia berpartisipasi dengan
+                        bertanggung jawab.
+                    </span>
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit" class="button">
+                        Daftar sebagai relawan ↗
+                    </button>
+
+                    <button type="reset" class="reset-button">
+                        Bersihkan
+                    </button>
+                </div>
+
+                <p
+                    id="pesan"
+                    class="message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+            </form>
+        </section>
+
+        <!-- TABEL DATA RELAWAN -->
+        <section id="relawan" class="table-panel">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">
+                        BERSAMA MENGAMBIL PERAN
+                    </p>
+
+                    <h2>
+                        Data relawan
+                        <span id="jumlah-tampil" class="count">0</span>
+                    </h2>
+                </div>
+
+                <button
+                    type="button"
+                    id="unduh-csv"
+                    class="outline-button"
+                >
+                    ↓ Unduh CSV
+                </button>
+            </div>
+
+            <div class="filters">
+                <input
+                    type="search"
+                    id="pencarian"
+                    placeholder="Cari nama, NIM, atau program studi"
+                    aria-label="Cari relawan"
+                >
+
+                <select id="filter-kegiatan" aria-label="Filter kegiatan">
+                    <option value="">Semua kegiatan</option>
+
+                    <option value="Kampus Bersih, Bumi Sehat">
+                        Kampus Bersih, Bumi Sehat
+                    </option>
+
+                    <option value="Teman Belajar Digital">
+                        Teman Belajar Digital
+                    </option>
+
+                    <option value="Pojok Baca Bergerak">
+                        Pojok Baca Bergerak
+                    </option>
+                </select>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <caption class="sr-only">
+                        Daftar relawan kegiatan mahasiswa
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">NO.</th>
+                            <th scope="col">NAMA / NIM</th>
+                            <th scope="col">PROGRAM STUDI</th>
+                            <th scope="col">KEGIATAN / PERAN</th>
+                            <th scope="col">KEHADIRAN</th>
+                            <th scope="col">AKSI</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabel-relawan">
+                        <!-- Diisi oleh JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="table-note">
+                Klik status untuk mengubah kehadiran.
+                Data contoh diberi label “Demo”.
+                Unduhan CSV berisi seluruh data relawan.
+            </p>
+        </section>
+
+        <!-- TENTANG PROYEK -->
+        <section id="tentang" class="about-section">
+            <div>
+                <p class="eyebrow">DI BALIK RUANGAKSI</p>
+
+                <h2>
+                    Dirancang untuk belajar.<br>
+                    Dibangun untuk bermanfaat.
+                </h2>
+            </div>
+
+            <div>
+                <p>
+                    Proyek UTS Pemrograman Web oleh
+                    <strong>Muhammad Rivaldi</strong>,
+                    mahasiswa semester 3 Program Studi Sistem
+                    Informasi, UIN Datokarama Palu.
+                </p>
+
+                <p>
+                    Website ini menggunakan HTML untuk struktur,
+                    CSS Flexbox untuk tata letak, dan JavaScript
+                    untuk mengelola data relawan.
+                </p>
+
+                <p>
+                    Data disimpan menggunakan localStorage,
+                    sehingga tidak tersinkron antarperangkat
+                    atau antarbrowser.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <a href="#beranda" class="footer-brand">
+                RuangAksi.
+            </a>
+
+            <p>
+                © 2026 Muhammad Rivaldi · Proyek Pemrograman Web
+            </p>
+
+            <a href="#beranda">Kembali ke atas ↑</a>
+        </footer>
+    </main>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
